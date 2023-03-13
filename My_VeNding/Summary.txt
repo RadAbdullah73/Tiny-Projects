@@ -1,0 +1,25 @@
+
+---
+The Project Contains 4 Packages 
+coins
+controller
+models
+testing
+---
+For coins Package : there are 4 Clases 
+Coin.java : an enum to select the type of coins user insert 
+CoinEntered.java : used for calculating total cents entered with other funcutionalties 
+MainCalculater.java : an abstract class contain two method to calculate change 
+ChangeCalcualter.java : a class inhert MainCalculater Class .
+---
+For Controller Package : there are two clases 
+AnewBought.java : A class activated when a new purshase occured , where it's constructer convert the selected item to its value 
+from the Item enum .
+MyVmMachine : a class implements the main interface for VmMachine , override all method and used it 
+----
+For models Packages : there are 2 clases 
+Item.java : an enum which contains all Items Avaialable in Vending Machine 
+VmMachine.java : an interface which ourVm implements 
+----
+For testing package : 
+there is only one class Test.java , used to display the flow on the trminal
