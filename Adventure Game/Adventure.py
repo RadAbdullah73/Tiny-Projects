@@ -6,16 +6,32 @@ def firstRoom():
     while choosenDirection not in directions:
         print("Options: left/right/backward/forward")
         choosenDirection = input()
-        if choosenDirection == "left":
-            # call function for next room 
-        elif choosenDirection == "right":
-            # call function for next room 
-        elif choosenDirection == "forward":
-            # call function for next room 
-        elif choosenDirection == "backward":
-            # call function for next room 
-        else: 
-            # call function for next room 
+    if choosenDirection == "left":
+        BatmanRoom()  
+    elif choosenDirection == "right":
+        GoodRoom()
+    elif choosenDirection == "forward":
+        hauntedRoom()
+    elif choosenDirection == "backward":
+        print("You find that this door opens into a wall.Closssssssed ! ")
+    else: 
+        print("Please enter a valid option.")
+
+def BatmanRoom():
+    directions = ["right","backward"]
+    print("You see a dark shadowy figure appear in the distance. You are creeped out. Where would you like to go?")
+    choosenDirection = ""
+    while choosenDirection not in directions:
+        print("Options: right/left/backward")
+        choosenDirection = input()
+    if choosenDirection == "right":
+        DragonRoom()
+    elif choosenDirection == "left":
+        print("You find that this door opens into a wall.")
+    elif choosenDirection == "backward":
+        firstRoom()
+    else:
+        print("Please enter a valid option.")
 
 
 
